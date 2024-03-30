@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Added transparency */
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1060&t=st=1709641753~exp=1709642353~hmac=5f8d0ae1ff33b05c60712db6573cd18eac989d8f1be8445d91792a834fd30a3ahttps://img.freepik.com/free-photo/top-view-stethoscope_23-2148551046.jpg?t=st=1709639938~exp=1709643538~hmac=f94331e96fc12b116906d5eeac46e3183fa4083e6a4b19beecc31a0cab9fd8d1&w=1060');
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6%;
+        }
+
+        .container {
+            border-radius: 10px;
+            border: 2px solid white;
+            background: transparent;
+            backdrop-filter: blur(8px);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold; /* Added for better label visibility */
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box; /* Added to include padding in width calculation */
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s; /* Added for hover effect */
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold; /* Added for better link visibility */
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                margin: 40px auto;
+            }
+
+            .input-group input {
+                width: 93.5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h2>Signup</h2>
+        <form action="#">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn"><a href="register.html">Register</a></button>
+            <p><a href="login.html">Already have an account? Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
